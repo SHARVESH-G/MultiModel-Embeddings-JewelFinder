@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const btn = document.getElementById("uploadBtn");
+    if (!btn) {
+        console.error("Upload button not found!");
+        return;
+    }
     btn.addEventListener("click", upload);
+    console.log("Upload button listener attached");
 });
 
 async function upload() {

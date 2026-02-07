@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image
 import easyocr
 
-from fastapi import FastAPI, UploadFile, File, Form
+from fastapi import FastAPI, UploadFile, File
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from sklearn.metrics.pairwise import cosine_similarity
