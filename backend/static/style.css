@@ -1,0 +1,11 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    padding: 40px;
+}
+
+.result-img {
+    width: 180px;
+    margin: 8px;
+    border-radius: 10px;
+}
