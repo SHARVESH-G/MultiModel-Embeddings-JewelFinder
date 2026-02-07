@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jewelry Search</title>
+    <title>Jewelry Finder</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
-
 <body>
 
-<!-- NAVIGATION BAR -->
+<!-- NAVBAR -->
 <nav class="navbar">
     <div class="nav-container">
         <a href="http://127.0.0.1:8000/" class="nav-logo">💎 Jewelry Finder</a>
@@ -21,13 +20,19 @@
 <div class="container">
     <h2 class="title">💎 Jewelry Finder</h2>
 
+    <!-- TEXT SEARCH -->
     <form class="search-bar" onsubmit="searchImages(event)">
         <input id="searchInput" placeholder="Search gold ring with diamond..." />
         <button type="submit">Search</button>
     </form>
 
-    <p id="status" class="status"></p>
+    <!-- IMAGE SEARCH -->
+    <div class="image-search">
+        <input type="file" id="imageInput" accept="image/*">
+        <button type="button" onclick="searchByImage()">Search by Image</button>
+    </div>
 
+    <p id="status" class="status"></p>
     <div id="results" class="results-grid"></div>
 </div>
 

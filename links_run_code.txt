@@ -5,3 +5,5 @@ http://127.0.0.1:8000/admin -- Admin
 
 
 py -m uvicorn main:app --reload
+
+py -m pip install fastapi uvicorn torch torchvision clip-by-openai scikit-learn pillow easyocr
