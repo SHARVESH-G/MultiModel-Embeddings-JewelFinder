@@ -107,6 +107,7 @@ const SearchPage = () => {
 
           {/* PREVIEW */}
           {imageFile && (
+            <div>
             <div className="image-preview">
               <p>Preview:</p>
               <img
@@ -118,6 +119,11 @@ const SearchPage = () => {
                   marginTop: "10px",
                 }}
               />
+            
+            </div>
+            <div>
+              <button style={{margin:"20px 0"}} onClick={()=>setImageFile(null)}>Clear</button>
+            </div>
             </div>
           )}
 
