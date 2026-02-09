@@ -121,7 +121,7 @@ const SearchPage = () => {
             </div>
           )}
 
-          <button onClick={searchByImage}>Search by Image (OCR)</button>
+          <button onClick={searchByImage}>Search</button>
         </div>
       )}
 

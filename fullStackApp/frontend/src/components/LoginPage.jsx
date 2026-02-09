@@ -37,7 +37,7 @@ const LoginPage = () => {
       <p className="subtitle">Enter credentials to access admin panel</p>
 
       <form onSubmit={handleLogin} className="upload-section">
-        <div className="input-wrapper">
+        <div className="input-wrapper" style={{paddingBottom:"25px"}}>
           <input
             type="text"
             value={username}
