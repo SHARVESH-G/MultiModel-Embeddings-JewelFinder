@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+torch
+pillow
+opencv-python
+git+https://github.com/openai/CLIP.git
+numpy
+scikit-learn
+easyocr
