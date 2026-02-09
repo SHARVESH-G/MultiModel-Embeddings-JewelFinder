@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import SearchPage from "./components/SearchPage";
 import AdminPage from "./components/AdminPage";
 import "./styles.css";
+import LoginPage from "./components/LoginPage";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
@@ -11,7 +13,15 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<SearchPage />} />
-        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route
+          path="/admin"
+          element={
+            <ProtectedRoute>
+              <AdminPage />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </Router>
   );
