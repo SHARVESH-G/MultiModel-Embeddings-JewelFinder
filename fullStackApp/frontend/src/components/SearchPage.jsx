@@ -87,7 +87,6 @@ const SearchPage = () => {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search gold ring with diamond..."
             />
             <label>Search Jewelry</label>
           </div>
@@ -105,6 +104,23 @@ const SearchPage = () => {
               onChange={(e) => setImageFile(e.target.files[0])}
             />
           </div>
+
+          {/* PREVIEW */}
+          {imageFile && (
+            <div className="image-preview">
+              <p>Preview:</p>
+              <img
+                src={URL.createObjectURL(imageFile)}
+                alt="Preview"
+                style={{
+                  maxWidth: "200px",
+                  maxHeight: "200px",
+                  marginTop: "10px",
+                }}
+              />
+            </div>
+          )}
+
           <button onClick={searchByImage}>Search by Image (OCR)</button>
         </div>
       )}
